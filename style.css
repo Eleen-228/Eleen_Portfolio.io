@@ -1,0 +1,232 @@
+/* Google Font Lato  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  /* color: #fcc508; */
+  /* color: #85fadb; */
+  color: white;
+}
+/* Preloader CSS  */
+.loader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #a2b4ac;
+  height: 100%;
+  width: 100%;
+}
+.disappear {
+  animation: vanish 2s forwards;
+}
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loader img {
+  width: 30%;
+}
+.scrollDisabled {
+  overflow: hidden;
+}
+/* Preloader CSS End  */
+.offset::before {
+  display: block;
+  content: "";
+  height: 5.5rem;
+  margin-top: -5.5rem;
+}
+/* Navigation CSS  */
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -19%;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1;
+  color: #fff;
+}
+
+.caption img {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  width: 15rem;
+  margin-bottom: .5rem;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+.caption h2 {
+  font-size: 3rem;
+  text-shadow: 0.1rem 0.1rem 1rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.3rem;
+}
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.navbar-brand {
+  margin-left: 5%;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #85fadb;
+}
+.navbar-brand img {
+  height: 3.8rem;
+}
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+/* Landing Page  */
+.about-inner {
+  /* background-color: #93a7aa; */
+  background-image: url(images/forest.jpeg);
+  z-index: -1;
+}
+/* Skill Section  */
+#skills i {
+  /* color: #85fadb; */
+  color: #7fa9c2;
+}
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h3 {
+  font-size: 2rem;
+}
+.jumbotron {
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+h3.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: 0.1rem;
+  background-color: #85fadb;
+  margin: 0 auto 2rem;
+}
+/* Project Section */
+.card {
+  background-color: #99bdd4;
+  transition: transform 0.75s ease-in;
+}
+.card.active:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.card-img-top {
+  height: 12rem;
+}
+.card-body {
+  height: 20rem;
+  color: #385b78;
+}
+.card-body .btn {
+  width: 45%;
+  border-radius: 0;
+  background-color: #385b78;
+  border-color: #385b78;
+}
+.card .btn:hover {
+  box-shadow: 0.2rem 0.2rem 1.5rem rgba(56, 91, 120, 0.8);
+}
+/* Project section Background CSS  */
+.fixed {
+  background-image: url(images/mountains.jpeg);
+  z-index: -1;
+}
+.dark {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 7rem 2rem;
+}
+/* Reveal CSS  */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+/* Contact Section  */
+footer {
+  padding: 7rem 0 1rem;
+}
+footer i {
+  color: #7fa9c2;
+}
+footer i:hover {
+  color: rgba(127, 169, 194, 0.7);
+}
+footer a[href^="mailto"] {
+  color: #7fa9c2;
+  text-decoration: none;
+}
+footer a[href^="mailto"]:hover {
+  color: rgba(127, 169, 194, 0.7);
+}
+.separator {
+  border-top: 0.1rem solid #85fadb;
+  margin: 2.5rem 0 1.5rem;
+}
+/* .resume a {
+  color: #fcc508;
+} */
+i.fa-brands {
+  margin: 1.5rem;
+}
+/* Media Queries  */
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+  .caption h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .narrow h3,
+  h3.heading {
+    font-size: 1.5rem;
+  }
+}
